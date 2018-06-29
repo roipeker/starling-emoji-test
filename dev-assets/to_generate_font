@@ -1,0 +1,1 @@
+msdf-bmfont -m 1024,1024 --smart-size -s 22 -i charset.txt ../fonts/OpenSans-Regular-Emoji.ttf

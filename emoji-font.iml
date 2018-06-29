@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="Flex" version="4">
+  <component name="FlexBuildConfigurationManager" active="mobile">
+    <configurations>
+      <configuration name="desktop" target-platform="Desktop" pure-as="true" main-class="Boot" output-file="emoji_test.swf" output-folder="$MODULE_DIR$/bin">
+        <dependencies target-player="30.0">
+          <entries>
+            <entry library-id="080118bf-de8d-4977-a03d-d66b2df64a64">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-id="d6407892-81c3-4a11-b50d-a0b5395a2be0">
+              <dependency linkage="Merged" />
+            </entry>
+          </entries>
+          <sdk name="air_sdk_29.0.0.112" />
+        </dependencies>
+        <compiler-options />
+        <packaging-air-desktop use-generated-descriptor="false" custom-descriptor-path="$MODULE_DIR$/app.xml" package-file-name="emoji_test" />
+        <packaging-android />
+        <packaging-ios />
+      </configuration>
+      <configuration name="mobile" target-platform="Mobile" pure-as="true" main-class="Boot" output-file="mobile.swf" output-folder="$MODULE_DIR$/bin">
+        <dependencies>
+          <entries>
+            <entry library-id="79278c6e-7a10-414c-a127-d29ba93ce63b">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-id="27508e65-5a68-4d7b-a223-11fd04d9f3da">
+              <dependency linkage="Merged" />
+            </entry>
+          </entries>
+          <sdk name="air_sdk_29.0.0.112" />
+        </dependencies>
+        <compiler-options>
+          <option name="resourceFilesMode" value="None" />
+        </compiler-options>
+        <packaging-air-desktop />
+        <packaging-android use-generated-descriptor="false" custom-descriptor-path="$MODULE_DIR$/app.xml" package-file-name="mobile">
+          <files-to-package>
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/bin-assets/assets" path-in-package="assets" />
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/bin-assets/fonts" path-in-package="fonts" />
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/bin-assets/icos" path-in-package="icos" />
+          </files-to-package>
+        </packaging-android>
+        <packaging-ios enabled="true" use-generated-descriptor="false" custom-descriptor-path="$MODULE_DIR$/app.xml" package-file-name="mobile">
+          <files-to-package>
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/bin-assets/splash/Default-375w-667h@2x~iphone.png" path-in-package="Default-375w-667h@2x~iphone.png" />
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/bin-assets/splash/Default-414w-736h@3x~iphone.png" path-in-package="Default-414w-736h@3x~iphone.png" />
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/bin-assets/splash/Default-568h@2x~iphone.png" path-in-package="Default-568h@2x~iphone.png" />
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/bin-assets/splash/Default-812h@3x~iphone.png" path-in-package="Default-812h@3x~iphone.png" />
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/bin-assets/splash/Default-Portrait@2x.png" path-in-package="Default-Portrait@2x.png" />
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/bin-assets/splash/Default-Portrait@2x~ipad.png" path-in-package="Default-Portrait@2x~ipad.png" />
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/bin-assets/splash/Default-Portrait~ipad.png" path-in-package="Default-Portrait~ipad.png" />
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/bin-assets/splash/Default@2x~iphone.png" path-in-package="Default@2x~iphone.png" />
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/bin-assets/assets" path-in-package="assets" />
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/bin-assets/fonts" path-in-package="fonts" />
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/bin-assets/icos" path-in-package="icos" />
+          </files-to-package>
+          <AirSigningOptions keystore-path="$MODULE_DIR$/../../../certificate/cert.p12" provisioning-profile-path="$MODULE_DIR$/../../../certificate/MyApp.mobileprovision" />
+        </packaging-ios>
+      </configuration>
+    </configurations>
+    <compiler-options />
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/bin" />
+      <excludeFolder url="file://$MODULE_DIR$/dev-assets" />
+    </content>
+    <orderEntry type="jdk" jdkName="air_sdk_29.0.0.112" jdkType="Flex SDK Type (new)" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="080118bf-de8d-4977-a03d-d66b2df64a64" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/libs/starling.swc!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="79278c6e-7a10-414c-a127-d29ba93ce63b" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/libs/starling.swc!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="27508e65-5a68-4d7b-a223-11fd04d9f3da" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/libs/adl-emulator.swc!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="d6407892-81c3-4a11-b50d-a0b5395a2be0" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/libs/adl-emulator.swc!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+  </component>
+</module>
